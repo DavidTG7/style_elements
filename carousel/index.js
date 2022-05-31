@@ -12,5 +12,10 @@ dot.forEach((oneDot, i) => {
 
     main.style.transform = `translateX(${ operation }%)`;
 
+    dot.forEach((oneDot, i) => {
+      dot[i].classList.remove('active')
+    })
+    dot[i].classList.add('active')
+
   })
 })

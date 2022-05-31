@@ -1,0 +1,60 @@
+
+
+.carousel {
+  width: 90%;
+  max-width: 120em;
+  padding: 2em;
+  border-radius: 26px;
+  background: #e0e0e0;
+  box-shadow:  13px 13px 26px #b8b8b8,
+             -13px -13px 26px #ffffff;
+}
+.carousel .main {
+  width: 200%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  background: #e0e0e0;
+  box-shadow:  13px 13px 26px #b8b8b8,
+             -13px -13px 26px #ffffff;
+  padding: 2em;
+
+  transition: all .8s ease;
+  transform: translateX(0%);
+}
+.carousel .img {
+  width: calc( 100% / 2 - 2em);
+  min-height: 10vh;
+  border-radius: 15px;
+  background: #e0e0e0;
+  box-shadow:  13px 13px 26px #b8b8b8,
+             -13px -13px 26px #ffffff;
+
+}
+.carousel .dots {
+  width: 100%;
+  padding: .4em;
+  margin: 1em 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .dot {
+  width: 2em;
+  height: 2em;
+  /* background-color: blue; */
+  list-style: none;
+  margin: 1em 1em 0;
+  border-radius: 15px;
+  background: #e0e0e0;
+  box-shadow:  13px 13px 26px #b8b8b8,
+             -13px -13px 26px #ffffff;
+
+}
+
+.carousel .dot.activo {
+  background-color: orange;
+}
